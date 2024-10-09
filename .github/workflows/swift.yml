@@ -17,8 +17,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Contenido del directorio
-        run: ls -la
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_15.3.app
 
       # - name: Set up Xcode
       #   uses: maxim-lobanov/setup-xcode@v2
