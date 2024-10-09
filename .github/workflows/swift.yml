@@ -14,6 +14,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+        with:
+          swift-version: ${{ matrix.swift }}
       - name: Checkout repository
         uses: actions/checkout@v4
 
