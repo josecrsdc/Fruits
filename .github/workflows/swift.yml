@@ -15,7 +15,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Contenido del directorio
+        run: ls -la
 
       # - name: Set up Xcode
       #   uses: maxim-lobanov/setup-xcode@v2
