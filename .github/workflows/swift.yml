@@ -5,13 +5,14 @@ name: New action Jose
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
-      - name: 'Hello World'
+      - name: "Hello World"
         run: echo "Hello World"
+      - name: Show date
+        run: date
